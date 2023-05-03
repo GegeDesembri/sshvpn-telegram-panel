@@ -1,0 +1,20 @@
+{
+    "inline_keyboard": [
+        [
+            {
+                "text": "SG - Amazon",
+                "callback_data": "server_123.123.213.222_22_root_PASSWORDNYA_Amazon_SG"
+            },
+            {
+                "text": "SG - OVH Cloud",
+                "callback_data": "server_23.212.33.44_22_root_PASSWORDNYA_OVH Cloud_SG"
+            }
+        ],
+        [
+            {
+                "text": "Batal",
+                "callback_data": "cancel"
+            }
+        ]
+    ]
+}
