@@ -36,7 +36,7 @@ Ada beberapa parameter yang harus diatur dahulu sebelum bot dapat digunakan. Par
 
     `TRIPAY_MCODE='tripay_merchantcode'`
 
-6. Ganti `tripay_payment_method` dengan Payment Method sesuai pengaturan [Tripay](https://tripay.co.id/)
+6. Ganti `tripay_payment_method` dengan Payment Method sesuai pengaturan [Tripay](https://tripay.co.id/) untuk melihat kodenya bisa ke [API Developer Guide - Channels](https://tripay.co.id/developer?tab=channels#channels)
 
     `TRIPAY_PAYMETHOD='tripay_payment_method'`
 
