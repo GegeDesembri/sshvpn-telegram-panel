@@ -4,7 +4,7 @@ After=network.target nss-lookup.target
 
 [Service]
 User=root
-ExecStart=/usr/local/bin/gegevps-bot
+ExecStart=gegevps-bot
 Restart=always
 RestartSec=2s
 
