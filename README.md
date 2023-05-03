@@ -70,6 +70,16 @@ Kamu bisa menyesuaikan harga setiap tunnel dengan mengedit file JSON yang berada
 Contoh: 
 `nano /etc/gegevps/telegram-bot/price/ssh_price.json`
 
+Format Callback Data
+
+`<Jumlah Hari>_days_<Harga>`
+
+Contoh 
+
+`3_days_2500`
+
+Berarti 3 hari seharga 2500
+
 # Catatan
 
 - Pembayaran yang didukung hanya Tripay.
