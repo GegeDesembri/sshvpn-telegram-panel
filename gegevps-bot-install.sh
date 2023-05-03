@@ -41,6 +41,12 @@ wgetcommand ${DIR_SYSTEMD}/${bin_localname}.service "${systemd_service_url}"
 chmod +x ${DIR_SYSTEMD}/${bin_localname}.service
 systemctl daemon-reload
 
+# Install Crontab Payment Validation
+payval_local="/usr/local/bin/gegevps-bot-payval"
+payval_url="https://github.com/${bin_source}/raw/master/payment_validation.sh"
+wget -qO "${payval_local}" "${payval_url}"
+chmod +x "${payval_local}"
+
 # Initial
 "${bin_local}" &>/dev/null
 
