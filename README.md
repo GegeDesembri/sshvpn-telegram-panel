@@ -16,27 +16,27 @@ Telegram Bot terintegrasi dengan [SSH/VPN Script](https://github.com/GegeDesembr
 
 Ada beberapa parameter yang harus diatur dahulu sebelum bot dapat digunakan. Parameter tersebut bisa kamu sesuaikan pada file `/etc/gegevps/telegram-bot/.env`.
 
-1. Ganti `your_license_key` dengan license key yang kamu dapatkan dari Admin
+1. Ganti `your_license_key` dengan license key yang kamu dapatkan dari [Admin](https://t.me/GegeVPS)
 
 `LICENSE_KEY='your_license_key'`
 
-2. Ganti `your_bot_token` dengan Token Bot yang telah kamu buat
+2. Ganti `your_bot_token` dengan Token Bot yang telah kamu buat di [BotFather](https://t.me/BotFather)
 
 `BOT_TOKEN='your_bot_token'`
 
-3. Ganti `tripay_apikey` dengan API Key yang kamu dapatkan dari Tripay
+3. Ganti `tripay_apikey` dengan API Key yang kamu dapatkan dari [Tripay](https://tripay.co.id/)
 
 `TRIPAY_APIKEY='tripay_apikey'`
 
-4. Ganti `tripay_privatekey` dengan Private Key yang kamu dapatkan dari Tripay
+4. Ganti `tripay_privatekey` dengan Private Key yang kamu dapatkan dari [Tripay](https://tripay.co.id/)
 
 `TRIPAY_PRIVATEKEY='tripay_privatekey'`
 
-5. Ganti `tripay_merchantcode` dengan Merchant Code yang kamu dapatkan dari Tripay
+5. Ganti `tripay_merchantcode` dengan Merchant Code yang kamu dapatkan dari [Tripay](https://tripay.co.id/)
 
 `TRIPAY_MCODE='tripay_merchantcode'`
 
-6. Ganti `tripay_payment_method` dengan Payment Method sesuai pengaturan Tripay
+6. Ganti `tripay_payment_method` dengan Payment Method sesuai pengaturan [Tripay](https://tripay.co.id/)
 
 `TRIPAY_PAYMETHOD='tripay_payment_method'`
 
