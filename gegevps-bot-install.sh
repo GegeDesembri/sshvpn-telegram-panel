@@ -46,4 +46,10 @@ systemctl daemon-reload
 
 # Helper
 echo -e "Kamu bisa mengatur semua konfigurasi pada file"
-echo -e "${workdir}"
+echo -e "${workdir}/.env"
+echo -e ""
+echo -e "Kamu bisa menambahkan server pada file JSON"
+echo -e "${workdir}/server_list.json"
+echo -e ""
+echo -e "Kamu bisa mengatur harga Tunnel folder"
+echo -e "${workdir}/price"
