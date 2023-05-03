@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# HTTP Code Check
-function http_code(){
-	curl --referer "gescripter.blogspot.com" --write-out '%{http_code}' --silent --output /dev/null "$1"
-}
-
 # Get Latest Version
 get_latest_release() {
 	curl -4 --silent "https://api.github.com/repos/$1/releases/latest" | jq -r .tag_name
@@ -20,32 +15,42 @@ bin_filename="gegevps-bot-linux"
 
 # Install Binary
 bin_url="https://github.com/${bin_source}/releases/download/${latest_version}/${bin_filename}"
-http_status="$(http_code "${bin_url}")"
-if [[ ${http_status} -ne 200 ]]; then
-    echo -e "Binary File not Found"
-    exit 1
-else
-    wget -qO "${bin_local}" "${bin_url}"
-    chmod +x "${bin_local}"
+if wget -qO "${bin_localpath}" "${bin_url}"; then
+    chmod +x "${bin_localpath}"
     echo -e "Binary File Installed"
+else
+    echo -e "Failed Install Binary"
+    exit 1
 fi
 
 # Install Dependencis
 mkdir -p "${workdir}" &>/dev/null
-apt-get install -y sshpass
+apt-get install -qq -y sshpass
 
 # Install Service
 DIR_SYSTEMD="/etc/systemd/system"
 systemd_service_url="https://raw.githubusercontent.com/${bin_source}/master/${bin_localname}.service"
-wgetcommand ${DIR_SYSTEMD}/${bin_localname}.service "${systemd_service_url}"
-chmod +x ${DIR_SYSTEMD}/${bin_localname}.service
-systemctl daemon-reload
+if wget -qO ${DIR_SYSTEMD}/${bin_localname}.service "${systemd_service_url}"; then
+    chmod +x ${DIR_SYSTEMD}/${bin_localname}.service
+    systemctl daemon-reload
+    echo -e "SystemD File Installed"
+else
+    echo -e "Failed Install SystemD"
+    exit 1
+fi
 
-# Install Crontab Payment Validation
+# Install Payment Validation
 payval_local="/usr/local/bin/gegevps-bot-payval"
 payval_url="https://github.com/${bin_source}/raw/master/payment_validation.sh"
-wget -qO "${payval_local}" "${payval_url}"
-chmod +x "${payval_local}"
+if wget -qO "${payval_local}" "${payval_url}"; then
+    chmod +x "${payval_local}"
+    echo -e "Payment Validation File Installed"
+else
+    echo -e "Failed Install Payment Validation"
+    exit 1
+fi
+
+# Install Crontab
 crontab_temp="$(mktemp)"
 crontab -l > ${crontab_temp}
 echo -e "\n*/1 * * * * ${payval_local}" >> ${crontab_temp}
@@ -53,7 +58,7 @@ crontab ${crontab_temp}
 rm -rf ${crontab_temp}
 
 # Initial
-"${bin_local}" &>/dev/null
+${bin_localname} &>/dev/null
 
 # Helper
 echo -e "Kamu bisa mengatur semua konfigurasi pada file"
