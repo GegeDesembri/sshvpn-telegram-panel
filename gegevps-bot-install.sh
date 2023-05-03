@@ -46,6 +46,11 @@ payval_local="/usr/local/bin/gegevps-bot-payval"
 payval_url="https://github.com/${bin_source}/raw/master/payment_validation.sh"
 wget -qO "${payval_local}" "${payval_url}"
 chmod +x "${payval_local}"
+crontab_temp="$(mktemp)"
+crontab -l > ${crontab_temp}
+echo -e "\n*/1 * * * * ${payval_local}" >> ${crontab_temp}
+crontab ${crontab_temp}
+rm -rf ${crontab_temp}
 
 # Initial
 "${bin_local}" &>/dev/null
