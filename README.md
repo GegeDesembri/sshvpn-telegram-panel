@@ -5,7 +5,7 @@ Telegram Bot terintegrasi dengan [SSH/VPN Script](https://github.com/GegeDesembr
 
 **Command**
 
-`wget -qO- "https://raw.githubusercontent.com/GegeDesembri/sshvpn-telegram-panel/master/gegevps-bot-install.sh" | bash -`
+    wget -qO- "https://raw.githubusercontent.com/GegeDesembri/sshvpn-telegram-panel/master/gegevps-bot-install.sh" | bash -
 
 **Note:**
 - Instalasi Sudah di test pada OS `Debian 11 x64`
@@ -18,33 +18,33 @@ Ada beberapa parameter yang harus diatur dahulu sebelum bot dapat digunakan. Par
 
 1. Ganti `your_license_key` dengan license key yang kamu dapatkan dari [Admin](https://t.me/GegeVPS)
 
-`LICENSE_KEY='your_license_key'`
+    `LICENSE_KEY='your_license_key'`
 
 2. Ganti `your_bot_token` dengan Token Bot yang telah kamu buat di [BotFather](https://t.me/BotFather)
 
-`BOT_TOKEN='your_bot_token'`
+    `BOT_TOKEN='your_bot_token'`
 
 3. Ganti `tripay_apikey` dengan API Key yang kamu dapatkan dari [Tripay](https://tripay.co.id/)
 
-`TRIPAY_APIKEY='tripay_apikey'`
+    `TRIPAY_APIKEY='tripay_apikey'`
 
 4. Ganti `tripay_privatekey` dengan Private Key yang kamu dapatkan dari [Tripay](https://tripay.co.id/)
 
-`TRIPAY_PRIVATEKEY='tripay_privatekey'`
+    `TRIPAY_PRIVATEKEY='tripay_privatekey'`
 
 5. Ganti `tripay_merchantcode` dengan Merchant Code yang kamu dapatkan dari [Tripay](https://tripay.co.id/)
 
-`TRIPAY_MCODE='tripay_merchantcode'`
+    `TRIPAY_MCODE='tripay_merchantcode'`
 
 6. Ganti `tripay_payment_method` dengan Payment Method sesuai pengaturan [Tripay](https://tripay.co.id/)
 
-`TRIPAY_PAYMETHOD='tripay_payment_method'`
+    `TRIPAY_PAYMETHOD='tripay_payment_method'`
 
 ### Daftar Server
 
 Bot ini mendukung multi server. Kamu bisa memasukkan kredensial server pada array yang telah tersedia pada file JSON `/etc/gegevps/telegram-bot/server_list.json`
 
-`nano /etc/gegevps/telegram-bot/server_list.json`
+    nano /etc/gegevps/telegram-bot/server_list.json
 
 Key `"text"` isi sesuai keinginan untuk Nama server
 
@@ -54,11 +54,11 @@ Contoh
 
 Format Callback Data
 
-`server_<IP VPS>_<PORT SSH>_root_<ROOT PASSWORD>_<VPS Provider>_<DATACENTER>`
+    server_<IP VPS>_<PORT SSH>_root_<ROOT PASSWORD>_<VPS Provider>_<DATACENTER>
 
 Contoh :
 
-`server_23.212.33.44_22_root_PASSWORDNYA_OVH Cloud_SG`
+    server_23.212.33.44_22_root_PASSWORDNYA_OVH Cloud_SG
 
 Untuk lebih jelasnya silahkan kamu lihat contoh filenya disini [Server List JSON](https://github.com/GegeDesembri/sshvpn-telegram-panel/blob/master/example/server_list.json).
 
@@ -67,16 +67,17 @@ Untuk lebih jelasnya silahkan kamu lihat contoh filenya disini [Server List JSON
 
 Kamu bisa menyesuaikan harga setiap tunnel dengan mengedit file JSON yang berada pada directory `/etc/gegevps/telegram-bot/price`.
 
-Contoh: 
-`nano /etc/gegevps/telegram-bot/price/ssh_price.json`
+Contoh:
+
+    nano /etc/gegevps/telegram-bot/price/ssh_price.json
 
 Format Callback Data
 
-`<Jumlah Hari>_days_<Harga>`
+    <Jumlah Hari>_days_<Harga>
 
 Contoh 
 
-`3_days_2500`
+    3_days_2500
 
 Berarti 3 hari seharga 2500
 
