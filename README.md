@@ -40,6 +40,10 @@ Ada beberapa parameter yang harus diatur dahulu sebelum bot dapat digunakan. Par
 
     `TRIPAY_PAYMETHOD='tripay_payment_method'`
 
+6. Ganti Init Balance `9999999999` menjadi 0 atau berapapun yang kamu mau selain nilai default
+
+    `INIT_BALANCE='9999999999'`
+
 ### Daftar Server
 
 Bot ini mendukung multi server. Kamu bisa memasukkan kredensial server pada array yang telah tersedia pada file JSON `/etc/gegevps/telegram-bot/server_list.json`
