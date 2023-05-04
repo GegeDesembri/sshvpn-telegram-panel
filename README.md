@@ -85,6 +85,12 @@ Contoh
 
 Berarti 3 hari seharga 2500
 
+### Pesan Selamat Datang
+
+Kamu bisa menyesuaikan pesan selamat datang pada file `/etc/gegevps/telegram-bot/mainmenu_welcome.txt`
+
+    nano /etc/gegevps/telegram-bot/mainmenu_welcome.txt
+
 # Catatan
 
 - Pembayaran yang didukung hanya Tripay.
