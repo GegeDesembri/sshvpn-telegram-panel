@@ -64,8 +64,12 @@ Contoh :
 
     server_23.212.33.44_22_root_PASSWORDNYA_OVH Cloud_SG
 
-Untuk lebih jelasnya silahkan kamu lihat contoh filenya disini [Server List JSON](https://github.com/GegeDesembri/sshvpn-telegram-panel/blob/master/example/server_list.json).
+**PENTING!!!**
 
+Batas Maksimal karakter dari `callback_data` adalah 64 karakter. Jadi pastikan panjang keseluruhan dari `callback_data` tidak lebih dari 64 karakter. Pada contoh diatas `server_23.212.33.44_22_root_PASSWORDNYA_OVH Cloud_SG` terdiri dari 52 karakter.
+    
+
+Untuk lebih jelasnya silahkan kamu lihat contoh filenya disini [Server List JSON](https://github.com/GegeDesembri/sshvpn-telegram-panel/blob/master/example/server_list.json).
 
 ### Mengatur Harga
 
