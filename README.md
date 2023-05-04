@@ -105,16 +105,16 @@ Contoh: Membatasi jumlah akun SSH/OpenVPN hanya 10 akun saja
     echo -n 10 > /etc/gegevps/telegram-bot/limiter/limit_ssh
 
 Begitu juga dengan tipe tunnel yang lain
-- `limit_ssh` : Membatasi jumlah akun SSH/OpenVPN (`/etc/gegevps/telegram-bot/limiter/limit_ssh`)
-- `limit_sevpn` : Membatasi jumlah akun SoftetherVPN (`/etc/gegevps/telegram-bot/limiter/limit_sevpn`)
-- `limit_vmess` : Membatasi jumlah akun VMess (`/etc/gegevps/telegram-bot/limiter/limit_vmess`)
-- `limit_vless` : Membatasi jumlah akun VLess (`/etc/gegevps/telegram-bot/limiter/limit_vless`)
-- `limit_trojan` : Membatasi jumlah akun Trojan (`/etc/gegevps/telegram-bot/limiter/limit_trojan`)
-- `limit_shadowsocks` : Membatasi jumlah akun Shadowsocks (`/etc/gegevps/telegram-bot/limiter/limit_shadowsocks`)
-- `limit_socks5` : Membatasi jumlah akun Socks5 (`/etc/gegevps/telegram-bot/limiter/limit_socks5`)
-- `limit_trojango` : Membatasi jumlah akun Trojan-Go (`/etc/gegevps/telegram-bot/limiter/limit_trojango`)
-- `limit_hysteria` : Membatasi jumlah akun Hysteria (`/etc/gegevps/telegram-bot/limiter/limit_hysteria`)
-- `limit_udpcustom` : Membatasi jumlah akun UDP Custom (`/etc/gegevps/telegram-bot/limiter/limit_udpcustom`)
+- `limit_ssh` : Membatasi jumlah akun **SSH/OpenVPN** (`/etc/gegevps/telegram-bot/limiter/limit_ssh`)
+- `limit_sevpn` : Membatasi jumlah akun **SoftetherVPN** (`/etc/gegevps/telegram-bot/limiter/limit_sevpn`)
+- `limit_vmess` : Membatasi jumlah akun **VMess** (`/etc/gegevps/telegram-bot/limiter/limit_vmess`)
+- `limit_vless` : Membatasi jumlah akun **VLess** (`/etc/gegevps/telegram-bot/limiter/limit_vless`)
+- `limit_trojan` : Membatasi jumlah akun **Trojan** (`/etc/gegevps/telegram-bot/limiter/limit_trojan`)
+- `limit_shadowsocks` : Membatasi jumlah akun **Shadowsocks** (`/etc/gegevps/telegram-bot/limiter/limit_shadowsocks`)
+- `limit_socks5` : Membatasi jumlah akun **Socks5** (`/etc/gegevps/telegram-bot/limiter/limit_socks5`)
+- `limit_trojango` : Membatasi jumlah akun **Trojan-Go** (`/etc/gegevps/telegram-bot/limiter/limit_trojango`)
+- `limit_hysteria` : Membatasi jumlah akun **Hysteria** (`/etc/gegevps/telegram-bot/limiter/limit_hysteria`)
+- `limit_udpcustom` : Membatasi jumlah akun **UDP Custom** (`/etc/gegevps/telegram-bot/limiter/limit_udpcustom`)
 
 # Catatan
 
