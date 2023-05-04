@@ -91,6 +91,27 @@ Kamu bisa menyesuaikan pesan selamat datang pada file `/etc/gegevps/telegram-bot
 
     nano /etc/gegevps/telegram-bot/mainmenu_welcome.txt
 
+### Batas Jumlah Akun
+
+Untuk membatasi jumlah akun setiap server bisa dilakukan dengan mengaturnya pada directory `/etc/gegevps/telegram-bot/limiter` di VPS Client.
+
+Contoh: Membatasi jumlah akun SSH/OpenVPN hanya 10 akun saja
+
+    mkdir -p /etc/gegevps/telegram-bot/limiter &>/dev/null
+    echo -n 10 > /etc/gegevps/telegram-bot/limiter/limit_ssh
+
+Begitu juga dengan tipe tunnel yang lain
+- `limit_ssh`
+- `limit_sevpn`
+- `limit_vmess`
+- `limit_vless`
+- `limit_trojan`
+- `limit_shadowsocks`
+- `limit_socks5`
+- `limit_trojango`
+- `limit_hysteria`
+- `limit_udpcustom`
+
 # Catatan
 
 - Pembayaran yang didukung hanya Tripay.
