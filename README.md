@@ -114,5 +114,5 @@ Begitu juga dengan tipe tunnel yang lain
 
 # Catatan
 
-- Pembayaran yang didukung hanya Tripay.
+- Pembayaran yang didukung hanya [Tripay](https://tripay.co.id/).
 - Server yang masuk dalam bot ini wajib menggunakan script [SSH/VPN Script](https://github.com/GegeDesembri/sshvpn-script). Jika tidak, maka server tidak akan merespon.
