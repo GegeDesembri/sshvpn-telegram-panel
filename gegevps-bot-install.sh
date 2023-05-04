@@ -60,7 +60,9 @@ if [[ $(crontab -l | grep -wce "${payval_local}") -eq 0 ]]; then
 fi
 
 # Initial
-${bin_localname} &>/dev/null
+if [[ ! -f "${workdir}/.env" ]]; then
+	${bin_localname} &>/dev/null
+fi
 
 # Helper
 echo -e "Kamu bisa mengatur semua konfigurasi pada file"
