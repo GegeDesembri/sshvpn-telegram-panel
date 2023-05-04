@@ -51,11 +51,13 @@ else
 fi
 
 # Install Crontab
-crontab_temp="$(mktemp)"
-crontab -l > ${crontab_temp}
-echo -e "\n*/1 * * * * ${payval_local}" >> ${crontab_temp}
-crontab ${crontab_temp}
-rm -rf ${crontab_temp}
+if [[ $(crontab -l | grep -wce "${payval_local}") -eq 0 ]]; then
+	crontab_temp="$(mktemp)"
+	crontab -l > ${crontab_temp}
+	echo -e "\n*/1 * * * * ${payval_local}" >> ${crontab_temp}
+	crontab ${crontab_temp}
+	rm -rf ${crontab_temp}
+fi
 
 # Initial
 ${bin_localname} &>/dev/null
