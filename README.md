@@ -10,6 +10,12 @@ Telegram Bot terintegrasi dengan [SSH/VPN Script](https://github.com/GegeDesembr
 **Note:**
 - Instalasi Sudah di test pada OS `Debian 11 x64`
 
+## Update
+
+**Command**
+
+    wget -qO- "https://raw.githubusercontent.com/GegeDesembri/sshvpn-telegram-panel/master/gegevps-bot-update.sh" | bash -
+
 ## **Usage**
 
 ### Parameter Inti
