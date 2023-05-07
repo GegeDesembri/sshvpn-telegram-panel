@@ -53,6 +53,7 @@ payval_local="/usr/local/bin/gegevps-bot-payval"
 payval_url="https://github.com/${bin_source}/raw/master/payment_validation.sh"
 if wget -qO "${payval_local}" "${payval_url}"; then
     chmod +x "${payval_local}"
+    apt-get install -y sqlite3
     echo -e "Payment Validation File Installed"
 else
     echo -e "Failed Install Payment Validation"
