@@ -21,7 +21,7 @@ bin_url="https://github.com/${bin_source}/releases/download/${latest_version}/${
 bin_sha256="$(curl -sS -kL https://github.com/${bin_source}/releases/download/${latest_version}/${bin_filename}.sha256 | sed '/^$/d')"
 bin_localpath="/usr/local/bin/${bin_localname}"
 systemctl stop gegevps-bot
-until [["$(sha256sum "${bin_localpath}" | awk '{print $1}')" == "${bin_sha256}"]]; do
+until [[ "$(sha256sum "${bin_localpath}" | awk '{print $1}')" == "${bin_sha256}" ]]; do
     wget -qO "${bin_localpath}" "${bin_url}"
     if [[ "$(sha256sum "${bin_localpath}" | awk '{print $1}')" == "${bin_sha256}" ]]; then
         chmod +x "${bin_localpath}"
