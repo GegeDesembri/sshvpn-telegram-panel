@@ -26,7 +26,6 @@ until [[ "$(sha256sum "${bin_localpath}" | awk '{print $1}')" == "${bin_sha256}"
     if [[ "$(sha256sum "${bin_localpath}" | awk '{print $1}')" == "${bin_sha256}" ]]; then
         chmod +x "${bin_localpath}"
         echo -e "Binary File Installed"
-        systemctl start gegevps-bot &>/dev/null
     fi
 done
 
@@ -88,3 +87,4 @@ if [[ ! -f "${workdir}/.env" ]]; then
     echo -e "Kamu bisa mengatur harga Tunnel folder"
     echo -e "${workdir}/price"
 fi
+systemctl start gegevps-bot &>/dev/null
