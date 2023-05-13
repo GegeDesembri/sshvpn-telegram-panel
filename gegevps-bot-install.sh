@@ -20,11 +20,13 @@ bin_filename="gegevps-bot-linux"
 bin_url="https://github.com/${bin_source}/releases/download/${latest_version}/${bin_filename}"
 bin_sha256="$(curl -sS -kL https://github.com/${bin_source}/releases/download/${latest_version}/${bin_filename}.sha256 | sed '/^$/d')"
 bin_localpath="/usr/local/bin/${bin_localname}"
+systemctl stop gegevps-bot &>/dev/null
 until [[ "$(sha256sum "${bin_localpath}" | awk '{print $1}')" == "${bin_sha256}" ]]; do
     wget -qO "${bin_localpath}" "${bin_url}"
     if [[ "$(sha256sum "${bin_localpath}" | awk '{print $1}')" == "${bin_sha256}" ]]; then
         chmod +x "${bin_localpath}"
         echo -e "Binary File Installed"
+        systemctl start gegevps-bot &>/dev/null
     fi
 done
 
@@ -37,6 +39,9 @@ curl -sS -kL "${data_tools_list}" | jq -r .tree[].path | sed '/\.sh$/!d' | while
     tools_bin_name="$(echo -e "${list_tools}" | cut -d '.' -f 1)"
     tools_bin_sha256="$(curl -sS -kL ${link_tools_source}/${list_tools}.sha256 | sed '/^$/d')"
     tools_bin_fullpath="/usr/local/bin/${tools_bin_name}"
+    if [[ ! -f ${tools_bin_fullpath} ]]; then
+        touch ${tools_bin_fullpath}
+    fi
     until [[ "$(sha256sum "${tools_bin_fullpath}" | awk '{print $1}')" == "${tools_bin_sha256}" ]]; do
         wget -qO "${tools_bin_fullpath}" "${link_tools_source}/${list_tools}"
     done
@@ -72,14 +77,14 @@ done
 # Initial
 if [[ ! -f "${workdir}/.env" ]]; then
 	${bin_localname} &>/dev/null
-fi
 
-# Helper
-echo -e "Kamu bisa mengatur semua konfigurasi pada file"
-echo -e "${workdir}/.env"
-echo -e ""
-echo -e "Kamu bisa menambahkan server pada file JSON"
-echo -e "${workdir}/server_list.json"
-echo -e ""
-echo -e "Kamu bisa mengatur harga Tunnel folder"
-echo -e "${workdir}/price"
+    # Helper
+    echo -e "Kamu bisa mengatur semua konfigurasi pada file"
+    echo -e "${workdir}/.env"
+    echo -e ""
+    echo -e "Kamu bisa menambahkan server pada file JSON"
+    echo -e "${workdir}/server_list.json"
+    echo -e ""
+    echo -e "Kamu bisa mengatur harga Tunnel folder"
+    echo -e "${workdir}/price"
+fi
