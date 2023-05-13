@@ -103,7 +103,7 @@ Begitu juga dengan tipe tunnel yang lain
 
 #### Skema Trial
 
-Bot ini juga mendukung skema pembuatan akun Trial per 1-24 jam. Pengaturannya mirip dengan pengaturab harga namun ada perbedaan. Perhatikan contoh berikut
+Bot ini juga mendukung skema pembuatan akun Trial per 1-24 jam. Pengaturannya mirip dengan pengaturan harga namun ada perbedaan. Perhatikan contoh berikut
 
 Contoh:
 
