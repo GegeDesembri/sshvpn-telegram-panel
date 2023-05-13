@@ -87,7 +87,7 @@ Contoh
 
     3_days_2500
 
-Berarti 3 hari seharga 2500
+Berarti 3 hari seharga `2500`
 
 Begitu juga dengan tipe tunnel yang lain
 - `ssh_price.json` : Membatasi jumlah akun **SSH/OpenVPN** (`/etc/gegevps/telegram-bot/price/ssh_price.json`)
@@ -100,6 +100,24 @@ Begitu juga dengan tipe tunnel yang lain
 - `trojango_price.json` : Membatasi jumlah akun **Trojan-Go** (`/etc/gegevps/telegram-bot/price/trojango_price.json`)
 - `hysteria_price.json` : Membatasi jumlah akun **Hysteria** (`/etc/gegevps/telegram-bot/price/hysteria_price.json`)
 - `udpcustom_price.json` : Membatasi jumlah akun **UDP Custom** (`/etc/gegevps/telegram-bot/price/udpcustom_price.json`)
+
+#### Skema Trial
+
+Bot ini juga mendukung skema pembuatan akun Trial per 1-24 jam. Pengaturannya mirip dengan pengaturab harga namun ada perbedaan. Perhatikan contoh berikut
+
+Contoh:
+
+    nano /etc/gegevps/telegram-bot/price/ssh_price.json
+
+Format Callback Data
+
+    <Jumlah Jam>_hours_<Harga>
+
+Contoh 
+
+    3_hours_0
+
+Berarti akan dibuat akun yang akan terhapus otomatis dalam 3 jam dengan harga `0` (_Harga `0` artinya pembuatan akun ini tidak akan memotong saldo Klien_)
 
 ### Pesan Selamat Datang
 
