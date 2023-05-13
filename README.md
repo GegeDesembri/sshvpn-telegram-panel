@@ -89,6 +89,18 @@ Contoh
 
 Berarti 3 hari seharga 2500
 
+Begitu juga dengan tipe tunnel yang lain
+- `ssh_price.json` : Membatasi jumlah akun **SSH/OpenVPN** (`/etc/gegevps/telegram-bot/price/ssh_price.json`)
+- `sevpn_price.json` : Membatasi jumlah akun **SoftetherVPN** (`/etc/gegevps/telegram-bot/price/sevpn_price.json`)
+- `vmess_price.json` : Membatasi jumlah akun **VMess** (`/etc/gegevps/telegram-bot/price/vmess_price.json`)
+- `vless_price.json` : Membatasi jumlah akun **VLess** (`/etc/gegevps/telegram-bot/price/vless_price.json`)
+- `trojan_price.json` : Membatasi jumlah akun **Trojan** (`/etc/gegevps/telegram-bot/price/trojan_price.json`)
+- `shadowsocks_price.json` : Membatasi jumlah akun **Shadowsocks** (`/etc/gegevps/telegram-bot/price/shadowsocks_price.json`)
+- `socks5_price.json` : Membatasi jumlah akun **Socks5** (`/etc/gegevps/telegram-bot/price/socks5_price.json`)
+- `trojango_price.json` : Membatasi jumlah akun **Trojan-Go** (`/etc/gegevps/telegram-bot/price/trojango_price.json`)
+- `hysteria_price.json` : Membatasi jumlah akun **Hysteria** (`/etc/gegevps/telegram-bot/price/hysteria_price.json`)
+- `udpcustom_price.json` : Membatasi jumlah akun **UDP Custom** (`/etc/gegevps/telegram-bot/price/udpcustom_price.json`)
+
 ### Pesan Selamat Datang
 
 Kamu bisa menyesuaikan pesan selamat datang pada file `/etc/gegevps/telegram-bot/mainmenu_welcome.txt`
