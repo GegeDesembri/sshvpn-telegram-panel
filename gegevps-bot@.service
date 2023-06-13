@@ -1,0 +1,12 @@
+[Unit]
+Description=GegeVPS Telegram Bot Integrated
+After=network.target nss-lookup.target
+
+[Service]
+User=root
+ExecStart=/usr/local/bin/gegevps-bot --profile=%i
+Restart=always
+RestartSec=2s
+
+[Install]
+WantedBy=multi-user.target
