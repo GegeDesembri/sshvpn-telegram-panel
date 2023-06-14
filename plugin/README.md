@@ -32,13 +32,17 @@ Parameter yang digunakan merujuk pada script [SSH/VPN Script](https://github.com
 
 Plugin memiliki 3-5 parameter yang akan digunakan dalam pembuatan akun.
 
-1. Parameter `Profile ID atau License Key`. Semua plugin pada argument `$1`/pertama akan memiliki license key yang digunakan pada Bot telegram.
-2. Parameter `username`. Semua plugin pada argument `$2`/kedua akan memiliki `username` yang dikirimkan oleh bot.
-3. Parameter `username`. Semua plugin pada argument `$3`/ketiga akan memiliki `password`/`expired` yang dikirimkan oleh bot.
-4. Parameter `username`. Semua plugin pada argument `$4`/keempat akan memiliki `core`/`expired` yang dikirimkan oleh bot.
-5. Parameter `username`. Semua plugin pada argument `$5`/kelima akan memiliki `expired` yang dikirimkan oleh bot.
+1. Semua plugin pada argument `$1`/pertama akan memiliki license key yang digunakan pada Bot telegram.
+2. Semua plugin pada argument `$2`/kedua akan memiliki `username` yang dikirimkan oleh bot.
+3. Semua plugin pada argument `$3`/ketiga akan memiliki `password`/`expired` yang dikirimkan oleh bot.
+4. Semua plugin pada argument `$4`/keempat akan memiliki `core`/`expired` yang dikirimkan oleh bot.
+5. Semua plugin pada argument `$5`/kelima akan memiliki `expired` yang dikirimkan oleh bot.
 
 Lebih jelasnya tentang isian masing-masing Argumen bisa dilihat pada tabel di atas.
+
+**Catatan:**
+
+1. Pada [SSH/VPN Script](https://github.com/GegeDesembri/sshvpn-script) penggunakan `password` pada `VMess`, `VLess`, `Trojan`, `Shadowsocks`, dan `Socks5` berisi `UUID`
 
 ## Contoh Penggunakan Arguments
 
