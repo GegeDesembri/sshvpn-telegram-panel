@@ -1,5 +1,7 @@
+
 # Pembuatan Plugin
 
+## Tabel Parameters
 Sintaks : `Bash Shell`
 |Name|$1|$2|$3|$4|$5|
 |--|--|--|--|--|--|
@@ -23,3 +25,36 @@ Sintaks : `Bash Shell`
 |telegram-**trojango**-trial|`<Profile ID>`|`<username>`|`<expired>`|`none`|`none`|
 |telegram-**udpcustom**-create|`<Profile ID>`|`<username>`|`<expired>`|`none`|`none`|
 |telegram-**udpcustom**-trial|`<Profile ID>`|`<username>`|`<expired>`|`none`|`none`|
+
+## Contoh Penggunakan Parameter
+
+Berikut ini adalah contoh penggunaan Parameters
+
+Script: `telegram-vmess-create`
+```shell
+#!/bin/bash
+
+license_key="$1" // Disini berisi 
+username="$2" // Disini berisi Username
+password="$3" // Disini berisi  UUID
+core="$4" // Disini berisi Core yang akan digunakan
+expire="$5" // Disini berisi lama waktu kadaluarsa
+
+echo -e "${license_key}"
+echo -e "${username}"
+echo -e "${password}"
+echo -e "${core}"
+echo -e "${expire}"
+
+................
+```
+Testing : `telegram-vmess-create "ini_lisensi" "ini_username" "ini_password" "ini_core" "ini_jumlahhari"`
+
+Output:
+```text
+ini_lisensi
+ini_username
+ini_password
+ini_core
+ini_jumlahhari
+```
