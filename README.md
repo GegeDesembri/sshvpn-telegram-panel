@@ -14,38 +14,6 @@ Telegram Bot terintegrasi dengan [SSH/VPN Script](https://github.com/GegeDesembr
 
 ## **Usage**
 
-### Parameter Inti
-
-Ada beberapa parameter yang harus diatur dahulu sebelum bot dapat digunakan. Parameter tersebut bisa kamu sesuaikan pada file `/etc/gegevps/telegram-bot/.env`.
-
-1. Ganti `your_bot_token` dengan Token Bot yang telah kamu buat di [BotFather](https://t.me/BotFather)
-
-    `BOT_TOKEN='your_bot_token'`
-
-2. Ganti `tripay_apikey` dengan API Key yang kamu dapatkan dari [Tripay](https://tripay.co.id/)
-
-    `TRIPAY_APIKEY='tripay_apikey'`
-
-3. Ganti `tripay_privatekey` dengan Private Key yang kamu dapatkan dari [Tripay](https://tripay.co.id/)
-
-    `TRIPAY_PRIVATEKEY='tripay_privatekey'`
-
-4. Ganti `tripay_merchantcode` dengan Merchant Code yang kamu dapatkan dari [Tripay](https://tripay.co.id/)
-
-    `TRIPAY_MCODE='tripay_merchantcode'`
-
-5. Ganti `tripay_payment_method` dengan Payment Method sesuai pengaturan [Tripay](https://tripay.co.id/) untuk melihat kodenya bisa ke [API Developer Guide - Channels](https://tripay.co.id/developer?tab=channels#channels)
-
-    `TRIPAY_PAYMETHOD='tripay_payment_method'`
-
-6. Ganti Init Balance `9999999999` menjadi 0 atau berapapun yang kamu mau selain nilai default
-
-    `INIT_BALANCE='9999999999'`
-
-7. Ganti Limit Trial `1` menjadi 0
-
-    `LIMIT_TRIAL='1'`
-
 ### Daftar Server
 
 Bot ini mendukung multi server. Kamu bisa memasukkan kredensial server pada array yang telah tersedia pada file JSON `/etc/gegevps/telegram-bot/server_list.json`
