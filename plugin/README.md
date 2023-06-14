@@ -34,7 +34,7 @@ Script: `telegram-vmess-create`
 ```shell
 #!/bin/bash
 
-license_key="$1" // Disini berisi 
+license_key="$1" // Disini berisi licensekey
 username="$2" // Disini berisi Username
 password="$3" // Disini berisi  UUID
 core="$4" // Disini berisi Core yang akan digunakan
