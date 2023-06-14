@@ -5,7 +5,7 @@ Telegram Bot terintegrasi dengan [SSH/VPN Script](https://github.com/GegeDesembr
 
 **Command**
 
-    wget -q -O "/usr/local/bin/bot-menu" "https://raw.githubusercontent.com/GegeDesembri/sshvpn-telegram-panel/master/tools/bot-menu.sh"
+    wget -q -O "/usr/local/bin/bot-menu" "https://raw.githubusercontent.com/GegeDesembri/sshvpn-telegram-panel/master/tools/bot-menu.sh" && \
     bot-menu
 
 **Note:**
