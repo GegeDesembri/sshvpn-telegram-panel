@@ -1,7 +1,7 @@
 # SSH/VPN Telegram Panel
 Telegram Bot terintegrasi dengan [SSH/VPN Script](https://github.com/GegeDesembri/sshvpn-script)
 
-## Install/Update
+## Bot Menu
 
 **Command**
 
