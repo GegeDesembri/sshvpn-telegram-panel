@@ -116,6 +116,14 @@ Begitu juga dengan tipe tunnel yang lain
 - `limit_hysteria` : Membatasi jumlah akun **Hysteria** (`/etc/gegevps/telegram-bot/limiter/limit_hysteria`)
 - `limit_udpcustom` : Membatasi jumlah akun **UDP Custom** (`/etc/gegevps/telegram-bot/limiter/limit_udpcustom`)
 
+### Melihat Log
+
+Untuk melihat log gunakan perintah berikut dan sesuaikan nama profile
+
+```shell
+tail -f /var/log/gegevps-bot/<nama_profile>/activity.log
+```
+
 # Catatan
 
 - Pembayaran yang didukung hanya [Tripay](https://tripay.co.id/).
