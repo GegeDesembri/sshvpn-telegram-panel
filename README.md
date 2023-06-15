@@ -116,6 +116,14 @@ Begitu juga dengan tipe tunnel yang lain
 - `limit_hysteria` : Membatasi jumlah akun **Hysteria** (`/etc/gegevps/telegram-bot/limiter/limit_hysteria`)
 - `limit_udpcustom` : Membatasi jumlah akun **UDP Custom** (`/etc/gegevps/telegram-bot/limiter/limit_udpcustom`)
 
+### Melihat Profile ID
+
+Untuk melihat Profile ID gunakan perintah berikut dan sesuaikan nama profile
+
+```shell
+gegevps-bot --profile="<nama_profil>" --hwid
+```
+
 ### Melihat Log
 
 Untuk melihat log gunakan perintah berikut dan sesuaikan nama profile
