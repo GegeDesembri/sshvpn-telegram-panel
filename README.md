@@ -16,7 +16,7 @@ Telegram Bot terintegrasi dengan [SSH/VPN Script](https://github.com/GegeDesembr
 
 ### Daftar Server
 
-Bot ini mendukung multi server. Kamu bisa memasukkan kredensial server pada array yang telah tersedia pada file JSON `/etc/gegevps/telegram-bot/server_list.json`
+Bot ini mendukung multi server. Kamu bisa memasukkan kredensial server pada array yang telah tersedia pada file JSON `/etc/gegevps/telegram-bot/<nama_profile>/server_list.json`
 
     nano /etc/gegevps/telegram-bot/<nama_profile>/server_list.json
 
