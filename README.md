@@ -14,6 +14,12 @@ Telegram Bot terintegrasi dengan [SSH/VPN Script](https://github.com/GegeDesembr
 
 ## **Usage**
 
+### Pesan Selamat Datang
+
+Kamu bisa menyesuaikan pesan selamat datang pada file `/etc/gegevps/telegram-bot/mainmenu_welcome.txt`
+
+    nano /etc/gegevps/telegram-bot/mainmenu_welcome.txt
+
 ### Daftar Server
 
 Bot ini mendukung multi server. Kamu bisa memasukkan kredensial server pada array yang telah tersedia pada file JSON `/etc/gegevps/telegram-bot/<nama_profile>/server_list.json`
@@ -88,12 +94,6 @@ Contoh
     3_hours_0
 
 Berarti akan dibuat akun yang akan terhapus otomatis dalam 3 jam dengan harga `0` (_Harga `0` artinya pembuatan akun ini tidak akan memotong saldo Klien_)
-
-### Pesan Selamat Datang
-
-Kamu bisa menyesuaikan pesan selamat datang pada file `/etc/gegevps/telegram-bot/mainmenu_welcome.txt`
-
-    nano /etc/gegevps/telegram-bot/mainmenu_welcome.txt
 
 ### Batas Jumlah Akun
 
