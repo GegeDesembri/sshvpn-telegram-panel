@@ -1,6 +1,10 @@
 # SSH/VPN Telegram Panel
 Telegram Bot terintegrasi dengan [SSH/VPN Script](https://github.com/GegeDesembri/sshvpn-script)
 
+## Docs Index
+
+> [Docs Index](https://github.com/GegeDesembri/sshvpn-telegram-panel#Docs-Index)
+
 ## Daftar Fitur
 - **Payment Integration**: Terintegrasi dengan [Tripay Payment Gateway](https://tripay.co.id/member/)
 - **Multiple Bot**: 1 Host bisa menjalankan beberapa bot server secara bersamaan
