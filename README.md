@@ -3,7 +3,26 @@ Telegram Bot terintegrasi dengan [SSH/VPN Script](https://github.com/GegeDesembr
 
 ## Docs Index
 
-> [Docs Index](https://github.com/GegeDesembri/sshvpn-telegram-panel#Docs-Index)
+> [**Docs Index**](https://github.com/GegeDesembri/sshvpn-telegram-panel#Docs-Index)
+
+> [**Daftar Fitur**](https://github.com/GegeDesembri/sshvpn-telegram-panel#Daftar-Fitur)
+
+> [**Install Bot Menu**](https://github.com/GegeDesembri/sshvpn-telegram-panel#Install-Bot-Menu)
+
+> [**Usage**](https://github.com/GegeDesembri/sshvpn-telegram-panel#Usage)
+- [Melihat Profile ID](https://github.com/GegeDesembri/sshvpn-telegram-panel#melihat-profile-id)
+- [Pesan Selamat Datang](https://github.com/GegeDesembri/sshvpn-telegram-panel#pesan-selamat-datang)
+- [Pilihan Tunnel Main Menu](https://github.com/GegeDesembri/sshvpn-telegram-panel#pilihan-tunnel-main-menu)
+- [Daftar Server](https://github.com/GegeDesembri/sshvpn-telegram-panel#daftar-server)
+- [Informasi Tunnel](https://github.com/GegeDesembri/sshvpn-telegram-panel#informasi-tunnel)
+- [Mengatur Harga Buyer](https://github.com/GegeDesembri/sshvpn-telegram-panel#mengatur-harga-buyer)
+- [Mengatur Harga Reseller](https://github.com/GegeDesembri/sshvpn-telegram-panel#mengatur-harga-reseller)
+- [Batas Jumlah akun](https://github.com/GegeDesembri/sshvpn-telegram-panel#batas-jumlah-akun)
+- [Role Level](https://github.com/GegeDesembri/sshvpn-telegram-panel#role-level)
+- [Notes](https://github.com/GegeDesembri/sshvpn-telegram-panel#notes)
+- [Melihat Log](https://github.com/GegeDesembri/sshvpn-telegram-panel#melihat-log)
+
+> [**Catatan**](https://github.com/GegeDesembri/sshvpn-telegram-panel#catatan)
 
 ## Daftar Fitur
 - **Payment Integration**: Terintegrasi dengan [Tripay Payment Gateway](https://tripay.co.id/member/)
