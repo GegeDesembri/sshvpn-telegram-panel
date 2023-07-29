@@ -2,15 +2,15 @@
 Telegram Bot terintegrasi dengan [SSH/VPN Script](https://github.com/GegeDesembri/sshvpn-script)
 
 ## Daftar Fitur
-- Payment Integration: Terintegrasi dengan [Tripay Payment Gateway](https://tripay.co.id/member/)
-- Multiple Bot: 1 Host bisa menjalankan beberapa bot server secara bersamaan
-- Multiple Server: 1 bot bisa terhubung ke beberapa Server Tunnel
-- Role Leveler: Bot dapat diatur untuk dapat menentukan pelanggan sebagai `buyer`, `reseller`, atau `admin`
-- Customizable: Bisa ubah sesuaikan sesuai kebutuhan dan keinginan
-- Limitable: Pembatasan slot akun untuk masing-masing server tunnel
-- Trial Test: Menyediakan akun trial untuk percobaan secara langsung dapat durasi per jam yang dapat disesuaikan
-- Trial Limit: Membatasi jumlah pembuatan akun per hari untuk masing-masing buyer /Tunnel/Server
-- Notes: Membuat sebuah catatan yang dapat baca oleh pengunjung bot
+- **Payment Integration**: Terintegrasi dengan [Tripay Payment Gateway](https://tripay.co.id/member/)
+- **Multiple Bot**: 1 Host bisa menjalankan beberapa bot server secara bersamaan
+- **Multiple Server**: 1 bot bisa terhubung ke beberapa Server Tunnel
+- **Role Leveler**: Bot dapat diatur untuk dapat menentukan pelanggan sebagai `buyer`, `reseller`, atau `admin`
+- **Customizable**: Bisa ubah sesuaikan sesuai kebutuhan dan keinginan
+- **Limitable**: Pembatasan slot akun untuk masing-masing server tunnel
+- **Trial Test**: Menyediakan akun trial untuk percobaan secara langsung dapat durasi per jam yang dapat disesuaikan
+- **Trial Limit**: Membatasi jumlah pembuatan akun per hari untuk masing-masing buyer /Tunnel/Server
+- **Notes**: Membuat sebuah catatan yang dapat baca oleh pengunjung bot
 
 ## Install Bot Menu
 
