@@ -17,6 +17,7 @@ Telegram Bot terintegrasi dengan [SSH/VPN Script](https://github.com/GegeDesembr
 - [Informasi Tunnel](https://github.com/GegeDesembri/sshvpn-telegram-panel#informasi-tunnel)
 - [Mengatur Harga Buyer](https://github.com/GegeDesembri/sshvpn-telegram-panel#mengatur-harga-buyer)
 - [Mengatur Harga Reseller](https://github.com/GegeDesembri/sshvpn-telegram-panel#mengatur-harga-reseller)
+- [Harga per Server](https://github.com/GegeDesembri/sshvpn-telegram-panel#harga-per-server)
 - [Batas Jumlah akun](https://github.com/GegeDesembri/sshvpn-telegram-panel#batas-jumlah-akun)
 - [Role Level](https://github.com/GegeDesembri/sshvpn-telegram-panel#role-level)
 - [Notes](https://github.com/GegeDesembri/sshvpn-telegram-panel#notes)
@@ -225,6 +226,50 @@ Mengatur harga untuk Renew untuk Reseller
 - `trojango_price_renew.json` : Daftar harga **Trojan-Go** (`/etc/gegevps/telegram-bot/<profile_name>/price_reseller/trojango_price_renew.json`)
 - `hysteria_price_renew.json` : Daftar harga **Hysteria** (`/etc/gegevps/telegram-bot/<profile_name>/price_reseller/hysteria_price_renew.json`)
 - `udpcustom_price_renew.json` : Daftar harga **UDP Custom** (`/etc/gegevps/telegram-bot/<profile_name>/price_reseller/udpcustom_price_renew.json`)
+
+### Harga per Server
+
+Kamu dapat membuat harga yang berbeda untuk masing-masing server dengan mengikuti cara berikut ini.
+
+Misalnya terdapat 2 server tunnel
+1. Server Biznet dengan ip `103.123.44.55`
+2. Server DigitalOcean dengan ip `128.22.33.44`
+
+Harga default untuk tunnel SSH/OpenVPN pada semua server adalah 10000 / 30 hari.
+
+Jika kamu ingin membedakan harga untuk tunnel SSH pada server DigitalOcean misalnya 5000 / 30 hari. Silahkan ikuti petunjuk berikut ini.
+
+1. Buat directory harga khusus untuk VPS yang diinginkan dengan nama directory menggunakan _IP_VPS_.
+
+```bash
+mkdir -p /etc/gegevps/telegram-bot/<profile_name>/price/<IP_VPS>
+```
+
+2. Salin file `.json` harga `default` untuk pembelian **Create** dan **Renew**
+
+```bash
+cp /etc/gegevps/telegram-bot/<profile_name>/price/ssh_price.json /etc/gegevps/telegram-bot/<profile_name>/price/<IP_VPS>/ssh_price.json
+cp /etc/gegevps/telegram-bot/<profile_name>/price/ssh_price_renew.json /etc/gegevps/telegram-bot/<profile_name>/price/<IP_VPS>/ssh_price_renew.json
+```
+
+3. Sekarang kamu bisa menentukan harga **Create** dan **Renew** khusus untuk Server dengan _IP_VPS_
+
+```bash
+# Edit Harga Create
+nano /etc/gegevps/telegram-bot/<profile_name>/price/<IP_VPS>/ssh_price.json
+```
+
+```bash
+# Edit Harga Renew
+nano /etc/gegevps/telegram-bot/<profile_name>/price/<IP_VPS>/ssh_price_renew.json
+```
+
+**Catatan:**
+- Ganti `<profile_name>` sesuai dengan nama profile bot yang kamu miliki
+- Ganti `<IP_VPS>` sesuai dengan IP VPS yang ingin kamu berikan harga khusus
+- Kamu tidak harus membuat file `.json` untuk semua tunnel pada harga khusus.
+- Jika kamu ingin membedakan harga hanya untuk SSH/OpenVPN saja cukup buat file `ssh_price.json` dan `ssh_price_renew.json` saja begitu juga untuk tunnel `sevpn`, `vmess`, dan lainnya. Sedangkan untuk jenis tunnel yang lain akan menggunakan harga `default`.
+- Kamu juga dapat membedakan harga untuk _Role Level_ `reseller` dengan melakukan hal yang sama pada directory `/etc/gegevps/telegram-bot/<profile_name>/price_reseller`
 
 #### Skema Trial
 
