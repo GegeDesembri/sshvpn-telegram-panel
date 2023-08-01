@@ -3,13 +3,13 @@ Telegram Bot terintegrasi dengan [SSH/VPN Script](https://github.com/GegeDesembr
 
 ## Docs Index
 
-> [**Docs Index**](https://github.com/GegeDesembri/sshvpn-telegram-panel#Docs-Index)
+> [**Docs Index**](https://github.com/GegeDesembri/sshvpn-telegram-panel#docs-index)
 
-> [**Daftar Fitur**](https://github.com/GegeDesembri/sshvpn-telegram-panel#Daftar-Fitur)
+> [**Daftar Fitur**](https://github.com/GegeDesembri/sshvpn-telegram-panel#daftar-fitur)
 
-> [**Install Bot Menu**](https://github.com/GegeDesembri/sshvpn-telegram-panel#Install-Bot-Menu)
+> [**Install Bot Menu**](https://github.com/GegeDesembri/sshvpn-telegram-panel#install-bot-menu)
 
-> [**Usage**](https://github.com/GegeDesembri/sshvpn-telegram-panel#Usage)
+> [**Usage**](https://github.com/GegeDesembri/sshvpn-telegram-panel#usage)
 - [Melihat Profile ID](https://github.com/GegeDesembri/sshvpn-telegram-panel#melihat-profile-id)
 - [Pesan Selamat Datang](https://github.com/GegeDesembri/sshvpn-telegram-panel#pesan-selamat-datang)
 - [Pilihan Tunnel Main Menu](https://github.com/GegeDesembri/sshvpn-telegram-panel#pilihan-tunnel-main-menu)
