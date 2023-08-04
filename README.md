@@ -80,7 +80,7 @@ nano /etc/gegevps/telegram-bot/<profile_name>/mainmenu_button.json
 Bot ini mendukung multi server. Kamu bisa memasukkan kredensial server pada array yang telah tersedia pada file JSON `/etc/gegevps/telegram-bot/<nama_profile>/server_list.json`
 
 ```shell
-    nano /etc/gegevps/telegram-bot/<nama_profile>/server_list.json
+nano /etc/gegevps/telegram-bot/<nama_profile>/server_list.json
 ```
 
 Key `"text"` isi sesuai keinginan untuk Nama server
