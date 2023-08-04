@@ -332,7 +332,7 @@ Secara _default_ semua pengunjung bot akan mendapatkan Role Level ini jika Teleg
 - Pembuatan Trial tanpa pembatasan
 - Perbedaan harga dengan pembeli normal
 
-Kamu bisa menambahkan daftar `reseller` pada file `/etc/gegevps/telegram-bot/<profile_name>/admin_roles.json` dengan memasukkan Telegram ID pada file tersebut dengan format JSON Array dengan tipe data `String` (diapit oleh tanda petik 2).
+Kamu bisa menambahkan daftar `reseller` pada file `/etc/gegevps/telegram-bot/<profile_name>/reseller_roles.json` dengan memasukkan Telegram ID pada file tersebut dengan format JSON Array dengan tipe data `String` (diapit oleh tanda petik 2).
 
 Contoh:
 ```json
