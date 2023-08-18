@@ -23,6 +23,8 @@ Telegram Bot terintegrasi dengan [SSH/VPN Script](https://github.com/GegeDesembr
 - [Notes](https://github.com/GegeDesembri/sshvpn-telegram-panel#notes)
 - [Melihat Log](https://github.com/GegeDesembri/sshvpn-telegram-panel#melihat-log)
 
+> [**Admin Panel**](https://github.com/GegeDesembri/sshvpn-telegram-panel#admin-panel)
+
 > [**Catatan**](https://github.com/GegeDesembri/sshvpn-telegram-panel#catatan)
 
 ## Daftar Fitur
