@@ -398,7 +398,18 @@ Buka Realtime Log menggunakan command berikut ini
 lnav /var/log/gegevps-bot/<profile_name>/activity.log
 ```
 
-# Catatan
+## Admin Panel
+
+Telegram Bot ini memiliki Admin Panel. Kamu dapat masuk ke dalam mode Admin Access dengan menggunakan tombol `LOGIN AS ADMIN`. Tombol ini hanya muncul jika Telegram ID anda sudah terdaftar sebagai admin. Pengunjung bot yang tidak terdaftar sebagai admin tidak akan melihat tombol `LOGIN AS ADMIN` karena secara otomatis tombol tersebut akan disembunyikan apabila pengunjung bot tidak termasuk dalam daftar Admin Bot. Berikut adalah beberapa fungsi yang saat ini telah tersedia di dalam Admin Panel
+
+1. **Daftar Reseller** (_Coming soon_) - Melihat daftar Reseller
+2. **Tambah Reseller** (_Coming soon_) - Menambah Reseller baru
+3. **Hapus Reseller** (_Coming soon_) - Mengahapus Reseller
+4. **Tambah Saldo** - Tambah Saldo pengguna bot
+5. **Kurangi Saldo** - Mengurangi Saldo pengguna bot
+6. **Broadcast Message** - Melakukan Broadcast pesan kepada semua pengguna bot. Broadcast ini mendukung semua jenis pesan text, gambar, audio, dan lain sebagainya.
+
+## Catatan
 
 - Pembayaran yang didukung hanya [Tripay](https://tripay.co.id/).
 - Jangan lupa untuk memasukkan IP Server Telegram Bot pada IP Whitelist di [Tripay Merchant](https://tripay.co.id/member/merchant)
