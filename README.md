@@ -411,6 +411,8 @@ Telegram Bot ini memiliki Admin Panel. Kamu dapat masuk ke dalam mode Admin Acce
 5. **Kurangi Saldo** - Mengurangi Saldo pengguna bot
 6. **Broadcast Message** - Melakukan Broadcast pesan kepada semua pengguna bot. Broadcast ini mendukung semua jenis pesan text, gambar, audio, dan lain sebagainya.
 
+**NOTE:** _Jika kamu telah selesai melakukan urusan pada Admin Panel, usahakan melakukan `ADMIN LOGOUT` untuk meminimalisir terjadinya error pada aktivitas selanjutnya._
+
 ## Catatan
 
 - Pembayaran yang didukung hanya [Tripay](https://tripay.co.id/).
