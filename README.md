@@ -404,12 +404,16 @@ lnav /var/log/gegevps-bot/<profile_name>/activity.log
 
 Telegram Bot ini memiliki Admin Panel. Kamu dapat masuk ke dalam mode Admin Access dengan menggunakan tombol `LOGIN AS ADMIN`. Tombol ini hanya muncul jika Telegram ID anda sudah terdaftar sebagai admin. Pengunjung bot yang tidak terdaftar sebagai admin tidak akan melihat tombol `LOGIN AS ADMIN` karena secara otomatis tombol tersebut akan disembunyikan apabila pengunjung bot tidak termasuk dalam daftar Admin Bot. Berikut adalah beberapa fungsi yang saat ini telah tersedia di dalam Admin Panel
 
-1. **Daftar Reseller** (_Coming soon_) - Melihat daftar Reseller
-2. **Tambah Reseller** (_Coming soon_) - Menambah Reseller baru
-3. **Hapus Reseller** (_Coming soon_) - Mengahapus Reseller
-4. **Tambah Saldo** - Tambah Saldo pengguna bot
-5. **Kurangi Saldo** - Mengurangi Saldo pengguna bot
-6. **Broadcast Message** - Melakukan Broadcast pesan kepada semua pengguna bot. Broadcast ini mendukung semua jenis pesan text, gambar, audio, dan lain sebagainya.
+1. **Broadcast Message** - Melakukan Broadcast pesan kepada semua pengguna bot. Broadcast ini mendukung semua jenis pesan text, gambar, audio, dan lain sebagainya.
+2. **Daftar Admin** - Melihat daftar Admin
+3. **Tambah Admin** - Menambah Admin baru
+4. **Hapus Admin** - Mengahapus Admin
+5. **Daftar Reseller** - Melihat daftar Reseller
+6. **Tambah Reseller** - Menambah Reseller baru
+7. **Hapus Reseller** - Mengahapus Reseller
+8. **Cek Saldo** - Cek Saldo pengguna bot
+9. **Tambah Saldo** - Tambah Saldo pengguna bot
+10. **Kurangi Saldo** - Mengurangi Saldo pengguna bot
 
 **NOTE:** _Jika kamu telah selesai melakukan urusan pada Admin Panel, usahakan melakukan `ADMIN LOGOUT` untuk meminimalisir terjadinya error pada aktivitas selanjutnya._
 
