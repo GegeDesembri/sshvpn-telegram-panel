@@ -31,6 +31,7 @@ Telegram Bot terintegrasi dengan [SSH/VPN Script](https://github.com/GegeDesembr
 - **Payment Integration**: Terintegrasi dengan [Tripay Payment Gateway](https://tripay.co.id/member/)
 - **Multiple Bot**: 1 Host bisa menjalankan beberapa bot server secara bersamaan
 - **Multiple Server**: 1 bot bisa terhubung ke beberapa Server Tunnel
+- **Admin Panel**: Bot Memiliki Admin Panel yang hanya bisa diakses oleh Admin yang telah terdaftar
 - **Role Leveler**: Bot dapat diatur untuk dapat menentukan pelanggan sebagai `buyer`, `reseller`, atau `admin`
 - **Customizable**: Bisa ubah sesuaikan sesuai kebutuhan dan keinginan
 - **Limitable**: Pembatasan slot akun untuk masing-masing server tunnel
