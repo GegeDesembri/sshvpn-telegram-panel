@@ -364,6 +364,9 @@ Contoh:
 ]
 ```
 
+**Catatan:**
+- ChatID/Telegram ID yang pertama (paling atas) akan menjadi Admin Utama
+
 ### Notes
 
 Mendukung sistem notasi menggunakan perintah `/notes` maka akan menampilkan daftar catatan yang dapat dibaca oleh visitor. Fitur notes juga mendukung catatan khusus pengguna tunnel aktif.
