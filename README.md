@@ -387,6 +387,7 @@ Terdapat 3 karakter yang tidak bisa ditulis secara langsung jika kamu ingin meng
 - `<` harus ditulis menggunakan sintaks `&lt;`
 - `>` harus ditulis menggunakan sintaks `&gt;`
 - `&` harus ditulis menggunakan sintaks `&amp;`
+- `"` harus ditulis menggunakan sintaks `&quot;`
 
 #### Cara mengambil Notes
 
