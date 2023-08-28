@@ -347,6 +347,11 @@ Contoh:
 ```
 
 #### Admin
+- Admin Dashboard (Hanya muncul pada Role Level Admin)
+- Broadcast Message
+- Daftar, Tambah, Hapus Admin
+- Daftar, Tambah, Hapus Reseller
+- Cek, Tambah, Kurangi Saldo
 - Kebebasan pembuatan akun
 
 Kamu bisa menambahkan daftar admin pada file `/etc/gegevps/telegram-bot/<profile_name>/admin_roles.json` dengan memasukkan Telegram ID pada file tersebut dengan format JSON Array dengan tipe data `string` (diapit oleh tanda petik 2).
