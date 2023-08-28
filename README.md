@@ -51,7 +51,7 @@ bot-menu
 ```
 
 **Note:**
-- Instalasi Sudah di test pada OS `Debian 11 x64`
+- Instalasi Sudah di test pada OS `Debian 11 x64` dan `Ubuntu 20 x64`
 
 ## **Usage**
 
