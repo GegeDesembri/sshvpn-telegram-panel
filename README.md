@@ -29,6 +29,7 @@ Telegram Bot terintegrasi dengan [SSH/VPN Script](https://github.com/GegeDesembr
 
 ## Daftar Fitur
 - **Payment Integration**: Terintegrasi dengan [Tripay Payment Gateway](https://tripay.co.id/member/)
+- **Tripay URL Callback**: URL Callback untuk verifikasi Merchant baru [Tripay Payment Gateway](https://tripay.co.id/member/)
 - **Custom API Server**: Dapat menggunakan Custom API Server jika kamu memilikinya
 - **Multiple Bot**: 1 Host bisa menjalankan beberapa bot server secara bersamaan
 - **Multiple Server**: 1 bot bisa terhubung ke beberapa Server Tunnel
