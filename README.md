@@ -399,17 +399,17 @@ Kamu bisa mengambil notes yang tersedia pada bot dengan mengirimkan pesan `#nama
 
 ### Melihat Log
 
-Untuk melihat log gunakan perintah berikut dan sesuaikan nama profile
-
-Install Module LNAV
+Bot ini sudah dilengkapi dengan Realtime Log Viewer. Gunakan perintah berikut untuk menggunakannya
 
 ```shell
-apt-get install -y lnav
+bot-log "<profile_name>"
 ```
-Buka Realtime Log menggunakan command berikut ini
+Ganti `<profile_name>` dengan nama profile bot server.
+
+Contoh
 
 ```shell
-lnav /var/log/gegevps-bot/<profile_name>/activity.log
+bot-log "default"
 ```
 
 ## Admin Panel
